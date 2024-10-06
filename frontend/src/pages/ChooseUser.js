@@ -8,7 +8,7 @@ import {
   CircularProgress,
   Backdrop,
 } from '@mui/material';
-import { AccountCircle, School, Group } from '@mui/icons-material';
+import { AccountCircle, college, Group } from '@mui/icons-material';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../redux/userRelated/userHandle';
@@ -103,7 +103,7 @@ const ChooseUser = ({ visitor }) => {
             <StyledPaper elevation={3}>
               <div onClick={() => navigateHandler("Student")}>
                 <Box mb={2}>
-                  <School fontSize="large" />
+                  <college fontSize="large" />
                 </Box>
                 <StyledTypography>
                   Student

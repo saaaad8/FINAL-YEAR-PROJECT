@@ -9,7 +9,7 @@ import LoginPage from './pages/LoginPage';
 import AdminRegisterPage from './pages/admin/AdminRegisterPage';
 import ChooseUser from './pages/ChooseUser';
 
-const App = () => {
+function App() {
   const { currentRole } = useSelector(state => state.user);
 
   return (
@@ -32,22 +32,19 @@ const App = () => {
       {currentRole === "Admin" &&
         <>
           <AdminDashboard />
-        </>
-      }
+        </>}
 
       {currentRole === "Student" &&
         <>
           <StudentDashboard />
-        </>
-      }
+        </>}
 
       {currentRole === "Teacher" &&
         <>
           <TeacherDashboard />
-        </>
-      }
+        </>}
     </Router>
-  )
+  );
 }
 
 export default App

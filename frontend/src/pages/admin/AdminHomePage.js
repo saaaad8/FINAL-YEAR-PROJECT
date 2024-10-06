@@ -69,7 +69,7 @@ const AdminHomePage = () => {
                             <Title>
                                 Fees Collection
                             </Title>
-                            <Data start={0} end={39805} duration={1.5} prefix="Rs" />                        </StyledPaper>
+                            <Data start={0} end={39805} duration={1.5} prefix="Rs " />                        </StyledPaper>
                     </Grid>
                     <Grid item xs={12} md={12} lg={12}>
                         <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
